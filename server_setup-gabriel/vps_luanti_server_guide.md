@@ -1,6 +1,6 @@
 # Guía de Despliegue de Servidor Luanti en un VPS
 
-Esta guía adapta las prácticas de despliegue profesionales vistas en "otro-proyecto" para la configuración de un servidor de Luanti robusto, seguro y escalable en un VPS (como DigitalOcean).
+Esta guía adapta las prácticas de despliegue profesionales vistas en "otro-proyecto" (pitutito.cl) para la configuración de un servidor de Luanti robusto, seguro y escalable en un VPS (como DigitalOcean).
 
 ## 1. Filosofía y Arquitectura
 

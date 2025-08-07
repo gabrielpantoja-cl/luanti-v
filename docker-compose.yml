@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  luantiserver:
+    build: .
+    container_name: luanti_server_production
+    restart: unless-stopped
+
+    ports:
+      - "30000:30000/udp"
+      - "30000:30000/tcp"
+
+    volumes:
+      - ./worlds:/var/lib/minetest/.minetest/worlds
+      - ./mods:/var/lib/minetest/.minetest/mods
+      - ./minetest.conf:/etc/minetest/minetest.conf:ro
+      - ./debug.txt:/var/lib/minetest/debug.txt
+
+    command: ["--config", "/etc/minetest/minetest.conf"]
